@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Pincode" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mk6-LE-hTU">
-                                <rect key="frame" x="16" y="51" width="343" height="21"/>
+                                <rect key="frame" x="16" y="60" width="343" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="Vew-nq-3fv"/>
                                 </constraints>
@@ -32,7 +32,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xG8-v6-dYB" customClass="PFXLockPincodeView">
-                                <rect key="frame" x="127.5" y="80" width="120" height="35"/>
+                                <rect key="frame" x="127.5" y="93" width="120" height="35"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="bTZ-VR-6Sk"/>
@@ -48,7 +48,7 @@
                                 </connections>
                             </view>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yeg-kd-h9k" customClass="PFXLockPincodeButton">
-                                <rect key="frame" x="150" y="135" width="75" height="75"/>
+                                <rect key="frame" x="150" y="148" width="75" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="IXT-yB-mf9"/>
                                     <constraint firstAttribute="width" constant="75" id="Rce-vA-KfK"/>
@@ -61,7 +61,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sh5-gZ-3GN" customClass="PFXLockPincodeButton">
-                                <rect key="frame" x="150" y="220" width="75" height="75"/>
+                                <rect key="frame" x="150" y="233" width="75" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="75" id="AY2-CV-KIm"/>
                                     <constraint firstAttribute="height" constant="75" id="v0J-Ot-imo"/>
@@ -74,7 +74,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KiX-B9-PPF" customClass="PFXLockPincodeButton">
-                                <rect key="frame" x="150" y="305" width="75" height="75"/>
+                                <rect key="frame" x="150" y="318" width="75" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="75" id="7UF-aZ-PUh"/>
                                     <constraint firstAttribute="height" constant="75" id="k5O-ft-hSq"/>
@@ -87,7 +87,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="osc-d7-erK" customClass="PFXLockPincodeButton">
-                                <rect key="frame" x="55" y="135" width="75" height="75"/>
+                                <rect key="frame" x="55" y="148" width="75" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="K4r-bk-zOp"/>
                                     <constraint firstAttribute="width" constant="75" id="T7y-7j-RgF"/>
@@ -100,7 +100,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ChQ-82-8lL" customClass="PFXLockPincodeButton">
-                                <rect key="frame" x="55" y="220" width="75" height="75"/>
+                                <rect key="frame" x="55" y="233" width="75" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="75" id="gdx-l6-bZB"/>
                                     <constraint firstAttribute="height" constant="75" id="mML-T3-yda"/>
@@ -113,7 +113,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWv-86-2dq" customClass="PFXLockPincodeButton">
-                                <rect key="frame" x="55" y="305" width="75" height="75"/>
+                                <rect key="frame" x="55" y="318" width="75" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="75" id="Caj-mA-Cl0"/>
                                     <constraint firstAttribute="height" constant="75" id="fhF-9f-1Ej"/>
@@ -126,7 +126,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jqP-3B-hWn" customClass="PFXLockPincodeButton">
-                                <rect key="frame" x="245" y="135" width="75" height="75"/>
+                                <rect key="frame" x="245" y="148" width="75" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="rch-2e-y5A"/>
                                     <constraint firstAttribute="width" constant="75" id="ymL-Pv-gi7"/>
@@ -139,7 +139,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2di-Ya-r4X" customClass="PFXLockPincodeButton">
-                                <rect key="frame" x="245" y="220" width="75" height="75"/>
+                                <rect key="frame" x="245" y="233" width="75" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="75" id="R7B-eB-YKi"/>
                                     <constraint firstAttribute="height" constant="75" id="ezS-AW-xHo"/>
@@ -152,7 +152,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZVn-wv-fPJ" customClass="PFXLockPincodeButton">
-                                <rect key="frame" x="245" y="305" width="75" height="75"/>
+                                <rect key="frame" x="245" y="318" width="75" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="CN4-BB-5jW"/>
                                     <constraint firstAttribute="width" constant="75" id="TPm-Cw-SX4"/>
@@ -165,7 +165,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6W-kV-xOA" customClass="PFXLockPincodeButton">
-                                <rect key="frame" x="150" y="390" width="75" height="75"/>
+                                <rect key="frame" x="150" y="403" width="75" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="75" id="j4e-Zs-S6g"/>
                                     <constraint firstAttribute="height" constant="75" id="v1q-jR-j2W"/>
@@ -178,7 +178,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gz0-NP-bVX">
-                                <rect key="frame" x="260" y="485" width="45" height="30"/>
+                                <rect key="frame" x="260" y="498" width="45" height="30"/>
                                 <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Delete"/>
                                 <connections>
@@ -201,7 +201,7 @@
                             <constraint firstItem="2di-Ya-r4X" firstAttribute="centerY" secondItem="Sh5-gZ-3GN" secondAttribute="centerY" id="U0p-e5-w4r"/>
                             <constraint firstItem="Sh5-gZ-3GN" firstAttribute="centerX" secondItem="BAK-Wi-8TN" secondAttribute="centerX" id="Ufd-DO-S4i"/>
                             <constraint firstItem="ZVn-wv-fPJ" firstAttribute="leading" secondItem="KiX-B9-PPF" secondAttribute="trailing" constant="20" id="Wfc-5y-BRd"/>
-                            <constraint firstItem="xG8-v6-dYB" firstAttribute="top" secondItem="Mk6-LE-hTU" secondAttribute="bottom" constant="8" id="ZGb-im-7Yr"/>
+                            <constraint firstItem="xG8-v6-dYB" firstAttribute="top" secondItem="Mk6-LE-hTU" secondAttribute="bottom" constant="12" id="ZGb-im-7Yr"/>
                             <constraint firstItem="f6W-kV-xOA" firstAttribute="centerX" secondItem="BAK-Wi-8TN" secondAttribute="centerX" id="ZYg-uL-mCM"/>
                             <constraint firstItem="jqP-3B-hWn" firstAttribute="centerY" secondItem="yeg-kd-h9k" secondAttribute="centerY" id="cIh-eV-TLA"/>
                             <constraint firstItem="gz0-NP-bVX" firstAttribute="centerX" secondItem="ZVn-wv-fPJ" secondAttribute="centerX" id="eZs-3B-KR4"/>
@@ -209,7 +209,7 @@
                             <constraint firstItem="2di-Ya-r4X" firstAttribute="leading" secondItem="Sh5-gZ-3GN" secondAttribute="trailing" constant="20" id="f2m-nf-pZw"/>
                             <constraint firstItem="yeg-kd-h9k" firstAttribute="top" secondItem="xG8-v6-dYB" secondAttribute="bottom" constant="20" id="fSd-0z-OeV"/>
                             <constraint firstItem="KiX-B9-PPF" firstAttribute="top" secondItem="Sh5-gZ-3GN" secondAttribute="bottom" constant="10" id="gfs-6s-lo5"/>
-                            <constraint firstItem="Mk6-LE-hTU" firstAttribute="top" secondItem="LtI-Rw-jTl" secondAttribute="bottom" constant="31" id="iDH-nS-3yK"/>
+                            <constraint firstItem="Mk6-LE-hTU" firstAttribute="top" secondItem="LtI-Rw-jTl" secondAttribute="bottom" constant="40" id="iDH-nS-3yK"/>
                             <constraint firstItem="KiX-B9-PPF" firstAttribute="centerX" secondItem="BAK-Wi-8TN" secondAttribute="centerX" id="j1k-0l-e62"/>
                             <constraint firstItem="KiX-B9-PPF" firstAttribute="leading" secondItem="CWv-86-2dq" secondAttribute="trailing" constant="20" id="pMb-mW-LIm"/>
                             <constraint firstItem="jqP-3B-hWn" firstAttribute="leading" secondItem="yeg-kd-h9k" secondAttribute="trailing" constant="20" id="r9m-TQ-IRU"/>
@@ -218,7 +218,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="deleteButton" destination="gz0-NP-bVX" id="2hf-1P-xmh"/>
                         <outlet property="lockPincodeView" destination="xG8-v6-dYB" id="LWD-4l-H7i"/>
+                        <outlet property="pincodeLabel" destination="Mk6-LE-hTU" id="Spu-br-feb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g7i-va-OHy" userLabel="First Responder" sceneMemberID="firstResponder"/>

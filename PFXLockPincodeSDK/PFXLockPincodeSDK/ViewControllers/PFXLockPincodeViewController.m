@@ -10,7 +10,9 @@
 
 @interface PFXLockPincodeViewController () <PFXLockPincodeViewDelegate>
 
+@property (weak, nonatomic) IBOutlet UILabel *pincodeLabel;
 @property (weak, nonatomic) IBOutlet PFXLockPincodeView *lockPincodeView;
+@property (weak, nonatomic) IBOutlet UIButton *deleteButton;
 
 @end
 
@@ -19,7 +21,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    [self localizedString];
+}
+
+- (void)localizedString
+{
+    NSBundle *bundle = [NSBundle bundleForClass:[self class]];
+    NSString *pincodeLabelText = NSLocalizedStringFromTableInBundle(@"pincodeLabel", nil, bundle, nil);
+    [self.pincodeLabel setText:pincodeLabelText];
+    [self.deleteButton setTitle:NSLocalizedStringFromTableInBundle(@"deleteButton", nil, bundle, nil) forState:UIControlStateNormal];
 }
 
 - (void)didReceiveMemoryWarning {

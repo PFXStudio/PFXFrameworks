@@ -23,6 +23,7 @@
 
 /* Begin PBXBuildFile section */
 		6D918D5D1E2164C500DB220D /* PFXCategorySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D918D5C1E2164C500DB220D /* PFXCategorySDK.framework */; };
+		6D918D681E2165D300DB220D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6D918D6A1E2165D300DB220D /* Localizable.strings */; };
 		6DBA12A61E205F1E00FD3591 /* PFXLockPincodeSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DBA12A41E205F1E00FD3591 /* PFXLockPincodeSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6DBA12F61E2062A800FD3591 /* PFXLockPincodeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DBA12F41E2062A800FD3591 /* PFXLockPincodeViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6DBA12F71E2062A800FD3591 /* PFXLockPincodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DBA12F51E2062A800FD3591 /* PFXLockPincodeViewController.m */; };
@@ -70,6 +71,8 @@
 /* Begin PBXFileReference section */
 		6D918D541E2164B000DB220D /* PFXCategorySDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PFXCategorySDK.xcodeproj; path = ../PFXCategorySDK/PFXCategorySDK.xcodeproj; sourceTree = "<group>"; };
 		6D918D5C1E2164C500DB220D /* PFXCategorySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PFXCategorySDK.framework; sourceTree = "<group>"; };
+		6D918D691E2165D300DB220D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		6D918D6B1E2165E400DB220D /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6DBA12A11E205F1E00FD3591 /* PFXLockPincodeSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PFXLockPincodeSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DBA12A41E205F1E00FD3591 /* PFXLockPincodeSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PFXLockPincodeSDK.h; sourceTree = "<group>"; };
 		6DBA12A51E205F1E00FD3591 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -115,6 +118,14 @@
 			);
 			name = PFXCategorySDK;
 			path = ../ThirdLibs/PFXCategorySDK;
+			sourceTree = "<group>";
+		};
+		6D918D631E2165A900DB220D /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				6D918D6A1E2165D300DB220D /* Localizable.strings */,
+			);
+			name = Strings;
 			sourceTree = "<group>";
 		};
 		6DBA12971E205F1E00FD3591 = {
@@ -175,6 +186,7 @@
 		6DBA12AF1E205F3C00FD3591 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6D918D631E2165A900DB220D /* Strings */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -292,6 +304,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				ko,
 			);
 			mainGroup = 6DBA12971E205F1E00FD3591;
 			productRefGroup = 6DBA12A21E205F1E00FD3591 /* Products */;
@@ -337,6 +350,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DBA12FF1E2063F400FD3591 /* Main.storyboard in Resources */,
+				6D918D681E2165D300DB220D /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,11 +414,25 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		6D918D6A1E2165D300DB220D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D918D691E2165D300DB220D /* en */,
+				6D918D6B1E2165E400DB220D /* ko */,
+			);
+			name = Localizable.strings;
+			path = Resources/Strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		6DBA12A71E205F1E00FD3591 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -456,6 +484,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -509,6 +538,7 @@
 				INFOPLIST_FILE = PFXLockPincodeSDK/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pfxstudio.PFXLockPincodeSDK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -527,6 +557,7 @@
 				INFOPLIST_FILE = PFXLockPincodeSDK/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pfxstudio.PFXLockPincodeSDK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
