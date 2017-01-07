@@ -1,6 +1,6 @@
 //
 //  PrefixHeader.pch
-//  PFXLockPincodeSDK
+//  PFXSample
 //
 //  Created by PFXStudio on 2017. 1. 7..
 //  Copyright © 2017년 PFXStudio. All rights reserved.
@@ -12,6 +12,10 @@
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
-#import "PFXLockPincodeSDK.h"
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <CoreData/CoreData.h>
+
+#import <PFXLockPincodeSDK/PFXLockPincodeSDK.h>
 
 #endif /* PrefixHeader_pch */

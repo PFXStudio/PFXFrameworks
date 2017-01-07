@@ -11,11 +11,44 @@
 		6DBA12CF1E2061EC00FD3591 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DBA12CE1E2061EC00FD3591 /* AppDelegate.m */; };
 		6DBA12D21E2061EC00FD3591 /* PFXSample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6DBA12D01E2061EC00FD3591 /* PFXSample.xcdatamodeld */; };
 		6DBA12D51E2061EC00FD3591 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DBA12D41E2061EC00FD3591 /* MasterViewController.m */; };
-		6DBA12D81E2061EC00FD3591 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DBA12D71E2061EC00FD3591 /* DetailViewController.m */; };
 		6DBA12DB1E2061EC00FD3591 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DBA12D91E2061EC00FD3591 /* Main.storyboard */; };
 		6DBA12DD1E2061EC00FD3591 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DBA12DC1E2061EC00FD3591 /* Assets.xcassets */; };
 		6DBA12E01E2061EC00FD3591 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DBA12DE1E2061EC00FD3591 /* LaunchScreen.storyboard */; };
+		6DBA12F31E20626700FD3591 /* PFXLockPincodeSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DBA12F21E20626700FD3591 /* PFXLockPincodeSDK.framework */; };
+		6DBA13381E2068D800FD3591 /* PFXPluginSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DBA13371E2068D800FD3591 /* PFXPluginSDK.framework */; };
+		6DBA133A1E2068E200FD3591 /* PFXPluginSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DBA13371E2068D800FD3591 /* PFXPluginSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6DBA12EC1E20624000FD3591 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DBA12E71E20624000FD3591 /* PFXLockPincodeSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6DBA12A11E205F1E00FD3591;
+			remoteInfo = PFXLockPincodeSDK;
+		};
+		6DBA12EE1E20624600FD3591 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DBA12E71E20624000FD3591 /* PFXLockPincodeSDK.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DBA12B71E2060AD00FD3591;
+			remoteInfo = "PFXLockPincodeSDK-Universal";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6DBA133B1E2068E200FD3591 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6DBA133A1E2068E200FD3591 /* PFXPluginSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		6DBA12C71E2061EC00FD3591 /* PFXSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PFXSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -25,12 +58,14 @@
 		6DBA12D11E2061EC00FD3591 /* PFXSample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PFXSample.xcdatamodel; sourceTree = "<group>"; };
 		6DBA12D31E2061EC00FD3591 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
 		6DBA12D41E2061EC00FD3591 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		6DBA12D61E2061EC00FD3591 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		6DBA12D71E2061EC00FD3591 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		6DBA12DA1E2061EC00FD3591 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6DBA12DC1E2061EC00FD3591 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6DBA12DF1E2061EC00FD3591 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6DBA12E11E2061EC00FD3591 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DBA12E71E20624000FD3591 /* PFXLockPincodeSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PFXLockPincodeSDK.xcodeproj; path = ../PFXLockPincodeSDK/PFXLockPincodeSDK.xcodeproj; sourceTree = "<group>"; };
+		6DBA12F21E20626700FD3591 /* PFXLockPincodeSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PFXLockPincodeSDK.framework; sourceTree = "<group>"; };
+		6DBA12FD1E20632200FD3591 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = "Supporting Files/PrefixHeader.pch"; sourceTree = "<group>"; };
+		6DBA13371E2068D800FD3591 /* PFXPluginSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PFXPluginSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +73,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DBA12F31E20626700FD3591 /* PFXLockPincodeSDK.framework in Frameworks */,
+				6DBA13381E2068D800FD3591 /* PFXPluginSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +84,8 @@
 		6DBA12BE1E2061EC00FD3591 = {
 			isa = PBXGroup;
 			children = (
+				6DBA12E71E20624000FD3591 /* PFXLockPincodeSDK.xcodeproj */,
+				6DBA12F01E20624E00FD3591 /* Frameworks */,
 				6DBA12C91E2061EC00FD3591 /* PFXSample */,
 				6DBA12C81E2061EC00FD3591 /* Products */,
 			);
@@ -67,8 +106,6 @@
 				6DBA12CE1E2061EC00FD3591 /* AppDelegate.m */,
 				6DBA12D31E2061EC00FD3591 /* MasterViewController.h */,
 				6DBA12D41E2061EC00FD3591 /* MasterViewController.m */,
-				6DBA12D61E2061EC00FD3591 /* DetailViewController.h */,
-				6DBA12D71E2061EC00FD3591 /* DetailViewController.m */,
 				6DBA12D91E2061EC00FD3591 /* Main.storyboard */,
 				6DBA12DC1E2061EC00FD3591 /* Assets.xcassets */,
 				6DBA12DE1E2061EC00FD3591 /* LaunchScreen.storyboard */,
@@ -83,8 +120,44 @@
 			isa = PBXGroup;
 			children = (
 				6DBA12CB1E2061EC00FD3591 /* main.m */,
+				6DBA12FD1E20632200FD3591 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6DBA12E81E20624000FD3591 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6DBA12ED1E20624000FD3591 /* PFXLockPincodeSDK.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6DBA12F01E20624E00FD3591 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6DBA12F11E20626700FD3591 /* PFXLockPincodeSDK */,
+				6DBA13361E2068D800FD3591 /* PFXPluginSDK */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6DBA12F11E20626700FD3591 /* PFXLockPincodeSDK */ = {
+			isa = PBXGroup;
+			children = (
+				6DBA12F21E20626700FD3591 /* PFXLockPincodeSDK.framework */,
+			);
+			name = PFXLockPincodeSDK;
+			path = ../ThirdLibs/PFXLockPincodeSDK;
+			sourceTree = "<group>";
+		};
+		6DBA13361E2068D800FD3591 /* PFXPluginSDK */ = {
+			isa = PBXGroup;
+			children = (
+				6DBA13371E2068D800FD3591 /* PFXPluginSDK.framework */,
+			);
+			name = PFXPluginSDK;
+			path = ../ThirdLibs/PFXPluginSDK;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,10 +170,12 @@
 				6DBA12C31E2061EC00FD3591 /* Sources */,
 				6DBA12C41E2061EC00FD3591 /* Frameworks */,
 				6DBA12C51E2061EC00FD3591 /* Resources */,
+				6DBA133B1E2068E200FD3591 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6DBA12EF1E20624600FD3591 /* PBXTargetDependency */,
 			);
 			name = PFXSample;
 			productName = PFXSample;
@@ -133,12 +208,28 @@
 			mainGroup = 6DBA12BE1E2061EC00FD3591;
 			productRefGroup = 6DBA12C81E2061EC00FD3591 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6DBA12E81E20624000FD3591 /* Products */;
+					ProjectRef = 6DBA12E71E20624000FD3591 /* PFXLockPincodeSDK.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				6DBA12C61E2061EC00FD3591 /* PFXSample */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		6DBA12ED1E20624000FD3591 /* PFXLockPincodeSDK.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = PFXLockPincodeSDK.framework;
+			remoteRef = 6DBA12EC1E20624000FD3591 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		6DBA12C51E2061EC00FD3591 /* Resources */ = {
@@ -158,7 +249,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DBA12D81E2061EC00FD3591 /* DetailViewController.m in Sources */,
 				6DBA12D51E2061EC00FD3591 /* MasterViewController.m in Sources */,
 				6DBA12CF1E2061EC00FD3591 /* AppDelegate.m in Sources */,
 				6DBA12CC1E2061EC00FD3591 /* main.m in Sources */,
@@ -167,6 +257,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6DBA12EF1E20624600FD3591 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "PFXLockPincodeSDK-Universal";
+			targetProxy = 6DBA12EE1E20624600FD3591 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6DBA12D91E2061EC00FD3591 /* Main.storyboard */ = {
@@ -282,6 +380,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../ThirdLibs/PFXLockPincodeSDK";
+				GCC_PREFIX_HEADER = "PFXSample/Supporting Files/PrefixHeader.pch";
 				INFOPLIST_FILE = PFXSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pfxstudio.PFXSample;
@@ -293,6 +393,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../ThirdLibs/PFXLockPincodeSDK";
+				GCC_PREFIX_HEADER = "PFXSample/Supporting Files/PrefixHeader.pch";
 				INFOPLIST_FILE = PFXSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pfxstudio.PFXSample;
@@ -319,6 +421,7 @@
 				6DBA12E61E2061EC00FD3591 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

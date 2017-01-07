@@ -16,4 +16,10 @@ FOUNDATION_EXPORT const unsigned char PFXLockPincodeSDKVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <PFXLockPincodeSDK/PublicHeader.h>
 
+#import <Foundation/Foundation.h>
+#import <PFXPluginSDK/PFXPluginSDK.h>
+
+#import "PFXLockPincodeViewController.h"
+#import "PFXLockPincodePlugin.h"
+
 
