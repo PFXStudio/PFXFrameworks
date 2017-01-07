@@ -8,7 +8,9 @@
 
 #import "PFXLockPincodeViewController.h"
 
-@interface PFXLockPincodeViewController ()
+@interface PFXLockPincodeViewController () <PFXLockPincodeViewDelegate>
+
+@property (weak, nonatomic) IBOutlet PFXLockPincodeView *lockPincodeView;
 
 @end
 
@@ -17,12 +19,25 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark - button Actions
+
+- (IBAction)touchedPincodeButton:(id)sender {
+    NSInteger tag = [sender tag];
+    [self.lockPincodeView appendingPincode:[@(tag) description]];
+}
+
+- (IBAction)touchedDeleteButton:(id)sender {
+    [self.lockPincodeView removeLastPincode];
+}
+
 
 /*
 #pragma mark - Navigation
@@ -33,5 +48,23 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (NSUInteger)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskPortraitUpsideDown;
+}
+
+- (void)lockScreenPincodeView:(PFXLockPincodeView *)lockScreenPincodeView didChangedPincode:(NSString *)pincode
+{
+    if ([self.pincode isEqualToString:pincode] == NO)
+    {
+        [lockScreenPincodeView initialize];
+        [lockScreenPincodeView shake];
+        
+        return;
+    }
+
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 @end

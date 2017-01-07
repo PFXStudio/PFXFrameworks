@@ -1,5 +1,5 @@
 //
-//  PFXLockPincodeViewController.h
+//  PFXLockPincodeButton.h
 //  PFXLockPincodeSDK
 //
 //  Created by PFXStudio on 2017. 1. 7..
@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PFXLockPincodeViewController : UIViewController
-
-@property (strong, nonatomic) NSString *pincode;
+IB_DESIGNABLE
+@interface PFXLockPincodeButton : UIButton
 
 @end

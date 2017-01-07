@@ -22,6 +22,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		6D918D321E2161A600DB220D /* UIView+Custom.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D918D301E2161A600DB220D /* UIView+Custom.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D918D331E2161A600DB220D /* UIView+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D918D311E2161A600DB220D /* UIView+Custom.m */; };
 		6DBA12A61E205F1E00FD3591 /* PFXLockPincodeSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DBA12A41E205F1E00FD3591 /* PFXLockPincodeSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6DBA12F61E2062A800FD3591 /* PFXLockPincodeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DBA12F41E2062A800FD3591 /* PFXLockPincodeViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6DBA12F71E2062A800FD3591 /* PFXLockPincodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DBA12F51E2062A800FD3591 /* PFXLockPincodeViewController.m */; };
@@ -29,6 +31,10 @@
 		6DBA13031E20677000FD3591 /* PFXLockPincodePlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DBA13011E20677000FD3591 /* PFXLockPincodePlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6DBA13041E20677000FD3591 /* PFXLockPincodePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DBA13021E20677000FD3591 /* PFXLockPincodePlugin.m */; };
 		6DBA132E1E20685800FD3591 /* PFXPluginSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DBA132D1E20685800FD3591 /* PFXPluginSDK.framework */; };
+		6DBDC50C1E2091B80037C2B7 /* PFXLockPincodeButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DBDC5081E2091B80037C2B7 /* PFXLockPincodeButton.h */; };
+		6DBDC50D1E2091B80037C2B7 /* PFXLockPincodeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DBDC5091E2091B80037C2B7 /* PFXLockPincodeButton.m */; };
+		6DBDC50E1E2091B80037C2B7 /* PFXLockPincodeView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DBDC50A1E2091B80037C2B7 /* PFXLockPincodeView.h */; };
+		6DBDC50F1E2091B80037C2B7 /* PFXLockPincodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DBDC50B1E2091B80037C2B7 /* PFXLockPincodeView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6D918D301E2161A600DB220D /* UIView+Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Custom.h"; path = "Categories/UIView+Custom.h"; sourceTree = "<group>"; };
+		6D918D311E2161A600DB220D /* UIView+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Custom.m"; path = "Categories/UIView+Custom.m"; sourceTree = "<group>"; };
 		6DBA12A11E205F1E00FD3591 /* PFXLockPincodeSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PFXLockPincodeSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DBA12A41E205F1E00FD3591 /* PFXLockPincodeSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PFXLockPincodeSDK.h; sourceTree = "<group>"; };
 		6DBA12A51E205F1E00FD3591 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -60,6 +68,10 @@
 		6DBA13021E20677000FD3591 /* PFXLockPincodePlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PFXLockPincodePlugin.m; path = Plugins/PFXLockPincodePlugin.m; sourceTree = "<group>"; };
 		6DBA13241E20684400FD3591 /* PFXPluginSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PFXPluginSDK.xcodeproj; path = ../PFXPluginSDK/PFXPluginSDK.xcodeproj; sourceTree = "<group>"; };
 		6DBA132D1E20685800FD3591 /* PFXPluginSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PFXPluginSDK.framework; sourceTree = "<group>"; };
+		6DBDC5081E2091B80037C2B7 /* PFXLockPincodeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PFXLockPincodeButton.h; path = ViewControllers/PFXLockPincodeButton.h; sourceTree = "<group>"; };
+		6DBDC5091E2091B80037C2B7 /* PFXLockPincodeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PFXLockPincodeButton.m; path = ViewControllers/PFXLockPincodeButton.m; sourceTree = "<group>"; };
+		6DBDC50A1E2091B80037C2B7 /* PFXLockPincodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PFXLockPincodeView.h; path = ViewControllers/PFXLockPincodeView.h; sourceTree = "<group>"; };
+		6DBDC50B1E2091B80037C2B7 /* PFXLockPincodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PFXLockPincodeView.m; path = ViewControllers/PFXLockPincodeView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +86,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D918D2E1E21612200DB220D /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				6D918D301E2161A600DB220D /* UIView+Custom.h */,
+				6D918D311E2161A600DB220D /* UIView+Custom.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
 		6DBA12971E205F1E00FD3591 = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +116,7 @@
 		6DBA12A31E205F1E00FD3591 /* PFXLockPincodeSDK */ = {
 			isa = PBXGroup;
 			children = (
+				6D918D2E1E21612200DB220D /* Categories */,
 				6DBA12B01E205F4000FD3591 /* Commons */,
 				6DBA13001E2066C400FD3591 /* Plugins */,
 				6DBA12AF1E205F3C00FD3591 /* Resources */,
@@ -110,6 +132,10 @@
 		6DBA12AC1E205F2600FD3591 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				6DBDC5081E2091B80037C2B7 /* PFXLockPincodeButton.h */,
+				6DBDC5091E2091B80037C2B7 /* PFXLockPincodeButton.m */,
+				6DBDC50A1E2091B80037C2B7 /* PFXLockPincodeView.h */,
+				6DBDC50B1E2091B80037C2B7 /* PFXLockPincodeView.m */,
 				6DBA12F41E2062A800FD3591 /* PFXLockPincodeViewController.h */,
 				6DBA12F51E2062A800FD3591 /* PFXLockPincodeViewController.m */,
 			);
@@ -187,7 +213,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DBDC50E1E2091B80037C2B7 /* PFXLockPincodeView.h in Headers */,
 				6DBA12F61E2062A800FD3591 /* PFXLockPincodeViewController.h in Headers */,
+				6D918D321E2161A600DB220D /* UIView+Custom.h in Headers */,
+				6DBDC50C1E2091B80037C2B7 /* PFXLockPincodeButton.h in Headers */,
 				6DBA13031E20677000FD3591 /* PFXLockPincodePlugin.h in Headers */,
 				6DBA12A61E205F1E00FD3591 /* PFXLockPincodeSDK.h in Headers */,
 			);
@@ -317,6 +346,9 @@
 			files = (
 				6DBA12F71E2062A800FD3591 /* PFXLockPincodeViewController.m in Sources */,
 				6DBA13041E20677000FD3591 /* PFXLockPincodePlugin.m in Sources */,
+				6DBDC50D1E2091B80037C2B7 /* PFXLockPincodeButton.m in Sources */,
+				6DBDC50F1E2091B80037C2B7 /* PFXLockPincodeView.m in Sources */,
+				6D918D331E2161A600DB220D /* UIView+Custom.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

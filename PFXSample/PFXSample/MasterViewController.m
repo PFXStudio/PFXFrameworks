@@ -65,7 +65,8 @@
     if ([text isEqualToString:kLockPincode] == YES)
     {
         PFXLockPincodePlugin *lockPincodePlugin = [PFXLockPincodePlugin new];
-        [lockPincodePlugin executeWithInfo:nil completion:^(NSDictionary *resultDict) {
+        NSDictionary *infoDict = [NSDictionary dictionaryWithObjectsAndKeys:@"0000", @"pincode", nil];
+        [lockPincodePlugin executeWithInfo:infoDict completion:^(NSDictionary *resultDict) {
             
         } failure:^(NSError *error) {
             

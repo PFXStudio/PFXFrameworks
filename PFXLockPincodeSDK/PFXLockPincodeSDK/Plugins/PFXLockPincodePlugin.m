@@ -13,11 +13,14 @@
 - (void)executeWithInfo:(NSDictionary *)infoDict completion:(void (^)(NSDictionary *))completion failure:(void (^)(NSError *))failure
 {
     [super executeWithInfo:infoDict completion:completion failure:failure];
+    NSString *pincode = [infoDict objectForKey:@"pincode"];
     
     NSBundle *bundle = [NSBundle bundleForClass:[self class]];
     PFXLockPincodeViewController *lockPincodeViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:bundle] instantiateViewControllerWithIdentifier:NSStringFromClass([PFXLockPincodeViewController class])];
-    [[[UIApplication sharedApplication].windows lastObject].rootViewController presentViewController:lockPincodeViewController animated:YES completion:nil];
-    
+    lockPincodeViewController.pincode = pincode;
+    [[[UIApplication sharedApplication].windows lastObject].rootViewController presentViewController:lockPincodeViewController animated:YES completion:^{
+        completion([NSDictionary dictionaryWithObjectsAndKeys:@"", kPluginResult, nil]);
+    }];
 }
 
 @end

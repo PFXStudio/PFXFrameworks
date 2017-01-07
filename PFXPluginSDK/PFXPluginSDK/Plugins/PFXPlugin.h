@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#define kPluginResult @"pluginResult"
+
 @interface PFXPlugin : NSObject
 
 - (void)executeWithInfo:(NSDictionary *)infoDict completion:(void(^)(NSDictionary *resultDict))completion failure:(void(^)(NSError *error))failure;
