@@ -18,8 +18,8 @@ FOUNDATION_EXPORT const unsigned char PFXLockPincodeSDKVersionString[];
 
 #import <Foundation/Foundation.h>
 #import <PFXPluginSDK/PFXPluginSDK.h>
+#import <PFXCategorySDK/PFXCategorySDK.h>
 
-#import "UIView+Custom.h"
 #import "PFXLockPincodeViewController.h"
 #import "PFXLockPincodePlugin.h"
 

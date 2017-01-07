@@ -22,8 +22,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		6D918D321E2161A600DB220D /* UIView+Custom.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D918D301E2161A600DB220D /* UIView+Custom.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6D918D331E2161A600DB220D /* UIView+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D918D311E2161A600DB220D /* UIView+Custom.m */; };
+		6D918D5D1E2164C500DB220D /* PFXCategorySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D918D5C1E2164C500DB220D /* PFXCategorySDK.framework */; };
 		6DBA12A61E205F1E00FD3591 /* PFXLockPincodeSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DBA12A41E205F1E00FD3591 /* PFXLockPincodeSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6DBA12F61E2062A800FD3591 /* PFXLockPincodeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DBA12F41E2062A800FD3591 /* PFXLockPincodeViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6DBA12F71E2062A800FD3591 /* PFXLockPincodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DBA12F51E2062A800FD3591 /* PFXLockPincodeViewController.m */; };
@@ -38,6 +37,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		6D918D591E2164B000DB220D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D918D541E2164B000DB220D /* PFXCategorySDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6D918D3E1E2163FD00DB220D;
+			remoteInfo = PFXCategorySDK;
+		};
+		6D918D5E1E2164ED00DB220D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D918D541E2164B000DB220D /* PFXCategorySDK.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D918D491E21642100DB220D;
+			remoteInfo = "PFXCategorySDK-Universal";
+		};
 		6DBA13291E20684400FD3591 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6DBA13241E20684400FD3591 /* PFXPluginSDK.xcodeproj */;
@@ -55,8 +68,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6D918D301E2161A600DB220D /* UIView+Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Custom.h"; path = "Categories/UIView+Custom.h"; sourceTree = "<group>"; };
-		6D918D311E2161A600DB220D /* UIView+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Custom.m"; path = "Categories/UIView+Custom.m"; sourceTree = "<group>"; };
+		6D918D541E2164B000DB220D /* PFXCategorySDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PFXCategorySDK.xcodeproj; path = ../PFXCategorySDK/PFXCategorySDK.xcodeproj; sourceTree = "<group>"; };
+		6D918D5C1E2164C500DB220D /* PFXCategorySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PFXCategorySDK.framework; sourceTree = "<group>"; };
 		6DBA12A11E205F1E00FD3591 /* PFXLockPincodeSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PFXLockPincodeSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DBA12A41E205F1E00FD3591 /* PFXLockPincodeSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PFXLockPincodeSDK.h; sourceTree = "<group>"; };
 		6DBA12A51E205F1E00FD3591 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -79,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D918D5D1E2164C500DB220D /* PFXCategorySDK.framework in Frameworks */,
 				6DBA132E1E20685800FD3591 /* PFXPluginSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,18 +100,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6D918D2E1E21612200DB220D /* Categories */ = {
+		6D918D551E2164B000DB220D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6D918D301E2161A600DB220D /* UIView+Custom.h */,
-				6D918D311E2161A600DB220D /* UIView+Custom.m */,
+				6D918D5A1E2164B000DB220D /* PFXCategorySDK.framework */,
 			);
-			name = Categories;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6D918D5B1E2164C500DB220D /* PFXCategorySDK */ = {
+			isa = PBXGroup;
+			children = (
+				6D918D5C1E2164C500DB220D /* PFXCategorySDK.framework */,
+			);
+			name = PFXCategorySDK;
+			path = ../ThirdLibs/PFXCategorySDK;
 			sourceTree = "<group>";
 		};
 		6DBA12971E205F1E00FD3591 = {
 			isa = PBXGroup;
 			children = (
+				6D918D541E2164B000DB220D /* PFXCategorySDK.xcodeproj */,
 				6DBA13241E20684400FD3591 /* PFXPluginSDK.xcodeproj */,
 				6DBA132B1E20684B00FD3591 /* Frameworks */,
 				6DBA12A31E205F1E00FD3591 /* PFXLockPincodeSDK */,
@@ -116,7 +139,6 @@
 		6DBA12A31E205F1E00FD3591 /* PFXLockPincodeSDK */ = {
 			isa = PBXGroup;
 			children = (
-				6D918D2E1E21612200DB220D /* Categories */,
 				6DBA12B01E205F4000FD3591 /* Commons */,
 				6DBA13001E2066C400FD3591 /* Plugins */,
 				6DBA12AF1E205F3C00FD3591 /* Resources */,
@@ -192,6 +214,7 @@
 		6DBA132B1E20684B00FD3591 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6D918D5B1E2164C500DB220D /* PFXCategorySDK */,
 				6DBA132C1E20685800FD3591 /* PFXPluginSDK */,
 			);
 			name = Frameworks;
@@ -215,7 +238,6 @@
 			files = (
 				6DBDC50E1E2091B80037C2B7 /* PFXLockPincodeView.h in Headers */,
 				6DBA12F61E2062A800FD3591 /* PFXLockPincodeViewController.h in Headers */,
-				6D918D321E2161A600DB220D /* UIView+Custom.h in Headers */,
 				6DBDC50C1E2091B80037C2B7 /* PFXLockPincodeButton.h in Headers */,
 				6DBA13031E20677000FD3591 /* PFXLockPincodePlugin.h in Headers */,
 				6DBA12A61E205F1E00FD3591 /* PFXLockPincodeSDK.h in Headers */,
@@ -237,6 +259,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				6D918D5F1E2164ED00DB220D /* PBXTargetDependency */,
 				6DBA13301E20686200FD3591 /* PBXTargetDependency */,
 			);
 			name = PFXLockPincodeSDK;
@@ -275,6 +298,10 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = 6D918D551E2164B000DB220D /* Products */;
+					ProjectRef = 6D918D541E2164B000DB220D /* PFXCategorySDK.xcodeproj */;
+				},
+				{
 					ProductGroup = 6DBA13251E20684400FD3591 /* Products */;
 					ProjectRef = 6DBA13241E20684400FD3591 /* PFXPluginSDK.xcodeproj */;
 				},
@@ -288,6 +315,13 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		6D918D5A1E2164B000DB220D /* PFXCategorySDK.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = PFXCategorySDK.framework;
+			remoteRef = 6D918D591E2164B000DB220D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		6DBA132A1E20684400FD3591 /* PFXPluginSDK.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -348,13 +382,17 @@
 				6DBA13041E20677000FD3591 /* PFXLockPincodePlugin.m in Sources */,
 				6DBDC50D1E2091B80037C2B7 /* PFXLockPincodeButton.m in Sources */,
 				6DBDC50F1E2091B80037C2B7 /* PFXLockPincodeView.m in Sources */,
-				6D918D331E2161A600DB220D /* UIView+Custom.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		6D918D5F1E2164ED00DB220D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "PFXCategorySDK-Universal";
+			targetProxy = 6D918D5E1E2164ED00DB220D /* PBXContainerItemProxy */;
+		};
 		6DBA13301E20686200FD3591 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "PFXPluginSDK-Universal";
